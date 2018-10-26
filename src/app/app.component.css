@@ -1,0 +1,10 @@
+body{width:700px;}
+
+card-panel teal{
+width: 800px;
+height: 800px;
+orientation: center;
+}   
+brand-logo{
+    margin-left: 50px;
+}

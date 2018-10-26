@@ -1,0 +1,95 @@
+<!--Es la barra de titulo-->
+<nav class="teal lighten-3">
+        <div class="nav-wrapper">
+            <img src="https://static.wixstatic.com/media/3ec653_6489d4647bfa42368da7e7232ecd80dd~mv2_d_15362_5499_s_3.png/v1/fill/w_255,h_91,al_c,q_80,usm_0.66_1.00_0.01/3ec653_6489d4647bfa42368da7e7232ecd80dd~mv2_d_15362_5499_s_3.webp" style="width: 15%;min-width:10%;">
+            <a class="brand-logo" style="margin-top: 10%" style="margin-left: 5%"> Serie Taylor </a>
+        </div>
+      </nav>
+      <!--Es la carta donde esta ingresar datos-->
+      <div class="row" >
+            <div class="col s12 m5">
+                    <div class="card-stacked">
+                        <div class="card-content"></div>
+                            <span class="white-text">
+                                <div class="row">
+                                <div class="col s12">
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                  <!--Columna uno-->
+                                    <div class="col s6">
+                                        <!--Es donde ingresamos que representa n-->
+                                        <div class="row">
+                                          <div class="input-field col s12">
+                                            <i class="material-icons prefix" >textsms</i>
+                                            <input [(ngModel)]="taylor.n" type="text" id="autocomplete-input" class="autocomplete">
+                                            <label for="autocomplete-input" > n:  </label>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!--Es donde ingresamos que representa x-->
+                                    <div class="row">
+                                            <div class="col s6">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                <i class="material-icons prefix">textsms</i>
+                                                <input [(ngModel)]="taylor.x" type="text" id="autocomplete-input" class="autocomplete">
+                                                <label for="autocomplete-input"> x: </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!--Columna dos-->
+                                    <!--Linea para imprimir el resultado segun la operacion-->>
+                                    <div class="col s12">
+                                        <div class="row" >
+                                            <div class="col s12">
+                                                    <div class="row">
+                                                            <div class="input-field col s12">
+                                                              <label for="disabled">Resultado <span ></span> {{taylor.resultadototal}}</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>         
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>         
+<!--menu de opciones-->
+<!--Funciones trigonometricas-->
+<label>Funciones Trigonometricas</label>
+<div class="row">
+        <a class="waves-effect waves-light btn" (click)="calcularSINx()">sinX</a>
+        <a class="waves-effect waves-light btn" (click)="calcularCosx()">cosX</a>
+        <a class="waves-effect waves-light btn" (click)="calcularTantx()">tanX</a>
+        <a class="waves-effect waves-light btn" (click)="CalcularSecX()">secX</a>
+        <a class="waves-effect waves-light btn" (click)="CalcularCscX()">cscX</a>
+        <a class="waves-effect waves-light btn" (click)="calcularArcSinX()">arcsinX</a>
+        <a class="waves-effect waves-light btn" (click)="calcularArctanx()">arctanX</a>
+  </div>
+              <br>
+<!--Funciones hiperbolas-->
+<label>Funciones Hiperbolas</label>
+<div class="row">
+        <a class="waves-effect waves-light btn" (click)="CalcularsinhX()">sinhX</a>
+        <a class="waves-effect waves-light btn" (click)="CalcularcoshX()">coshX</a>
+        <a class="waves-effect waves-light btn" (click)="CalculartanhX()">tanhX</a>
+        <a class="waves-effect waves-light btn" (click)="Calcularsinhx1()">sinh-1</a>
+        <a class="waves-effect waves-light btn" (click)="Calculartanh()">tanh-1</a>
+  </div>
+<!--Funcion W de Lambert-->
+<label>Funciones Geometricas</label>
+<div class="row">
+        <a class="waves-effect waves-light btn" (click)="CalcularWo()">w0</a>
+        <a class="waves-effect waves-light btn" (click)="calcularS2()">ln2</a>
+  </div>
+
+  <!--Funciones Exponenciales y logaritmos naturales-->
+  <label>Funciones Exponenciales y logaritmos naturales</label>
+  <div class="row">
+      <a class="waves-effect waves-light btn" (click)="CalcularEx()">e^x</a>
+      <a class="waves-effect waves-light btn" (click)="Calcularln1X()">ln1+X</a>
+</div>
